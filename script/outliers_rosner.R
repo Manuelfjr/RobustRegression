@@ -30,7 +30,8 @@ plot(x.rd.no, y.rd.no, main='Residual vs Density (Sem outlier)',
 x = data$free.sulfur.dioxide
 y = data$total.sulfur.dioxide
 dim(data)
-ft.rtest = rosnerTest(y, k = 1000)
+plot(x,y)
+ft.rtest = rosnerTest(y, k = 1400)
 ft.rtest$n.outliers # Quantidade de outliers (TRUE)
 non.out = ft.rtest$all.stats[ft.rtest$all.stats$Outlier,]$Obs.Num
 x.ft.no = x[-non.out]; y.ft.no = y[-non.out]

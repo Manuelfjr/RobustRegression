@@ -12,7 +12,7 @@ library(quantreg)
 # padronizado -3,3 
 # Reajustar o OLS e outros modelos
 # sem outliers
-View(data)
+#View(data)
 # ----------------------------------------------
 ## functions required - ETKRR method ---------------
 
